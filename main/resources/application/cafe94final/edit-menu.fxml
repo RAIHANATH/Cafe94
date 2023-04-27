@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.cafe94final.EditChefController">
+    <children>
+        <Label layoutX="15.0" layoutY="53.0" text="What would you like to add to the menu?">
+            <font>
+                <Font name="Times New Roman Italic" size="29.0"/>
+            </font>
+        </Label>
+        <Label layoutX="538.0" layoutY="42.0" prefHeight="56.0" prefWidth="57.0" text="94" textFill="#868686">
+            <font>
+                <Font name="Futura Medium" size="40.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="logo" fitHeight="48.0" fitWidth="49.0" layoutX="488.0" layoutY="45.0">
+            <image>
+                <Image url="@../../../../../../../Downloads/Cafe94/Cafe94/src/main/resources/application/test/logo.png"/>
+            </image>
+            <effect>
+                <ColorAdjust contrast="-1.0"/>
+            </effect>
+        </ImageView>
+        <Separator layoutX="10.0" layoutY="91.0" prefHeight="3.0" prefWidth="465.0"/>
+        <Button fx:id="addSpecial" layoutX="241.0" layoutY="335.0" mnemonicParsing="false" prefHeight="34.0"
+                prefWidth="74.0" text="Edit">
+            <font>
+                <Font name="Times New Roman Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Label layoutX="20.0" layoutY="104.0" prefHeight="33.0" prefWidth="157.0" text="Current specials:">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </Label>
+        <Label fx:id="currentSpecialOne" layoutX="52.0" layoutY="146.0" prefHeight="27.0" prefWidth="222.0"
+               text="Four Cheese Pizza"/>
+        <Label fx:id="currentSpecialTwo" layoutX="53.0" layoutY="179.0" prefHeight="27.0" prefWidth="222.0"
+               text="Texas BBQ Burger"/>
+        <Label fx:id="currentSpecialThree" layoutX="53.0" layoutY="215.0" prefHeight="27.0" prefWidth="222.0"
+               text="Vegan Mac &amp; Cheese"/>
+        <Label fx:id="currentSpecialFour" layoutX="53.0" layoutY="252.0" prefHeight="27.0" prefWidth="222.0"
+               text="Cheesecake"/>
+        <TextField fx:id="editSpecialOne" layoutX="277.0" layoutY="147.0" prefHeight="26.0" prefWidth="303.0"/>
+        <Label layoutX="268.0" layoutY="104.0" prefHeight="33.0" prefWidth="157.0" text="Change to:">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="editSpecialTwo" layoutX="278.0" layoutY="181.0" prefHeight="26.0" prefWidth="303.0"/>
+        <TextField fx:id="editSpecialThree" layoutX="278.0" layoutY="216.0" prefHeight="26.0" prefWidth="303.0"/>
+        <TextField fx:id="editSpecialFour" layoutX="278.0" layoutY="253.0" prefHeight="26.0" prefWidth="303.0"/>
+        <Label fx:id="editSpecialOne1" layoutX="28.0" layoutY="145.0" prefHeight="27.0" prefWidth="18.0" text="1)"/>
+        <Label fx:id="editSpecialOne11" layoutX="28.0" layoutY="178.0" prefHeight="27.0" prefWidth="18.0" text="2)"/>
+        <Label fx:id="editSpecialOne12" layoutX="28.0" layoutY="215.0" prefHeight="27.0" prefWidth="18.0" text="3)"/>
+        <Label fx:id="editSpecialOne13" layoutX="28.0" layoutY="252.0" prefHeight="27.0" prefWidth="18.0" text="4)"/>
+    </children>
+</AnchorPane>

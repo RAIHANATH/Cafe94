@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="399.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.cafe94final.ManagerController">
+    <children>
+        <Button layoutX="13.0" layoutY="349.0" mnemonicParsing="false" onAction="#deleteWaiter" prefHeight="34.0"
+                prefWidth="72.0" text="Delete">
+            <font>
+                <Font name="Times New Roman Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Label layoutX="15.0" layoutY="14.0" text="Create waiter account:">
+            <font>
+                <Font name="Times New Roman Italic" size="22.0"/>
+            </font>
+        </Label>
+        <Label layoutX="12.0" layoutY="62.0" prefHeight="17.0" prefWidth="90.0" text="Waiter Name:"/>
+        <Label layoutX="12.0" layoutY="124.0" prefHeight="17.0" prefWidth="107.0" text="Waiter Last Name:"/>
+        <Label layoutX="13.0" layoutY="183.0" prefHeight="17.0" prefWidth="72.0" text="Waiter ID:"/>
+        <Separator layoutX="9.0" layoutY="50.0" orientation="VERTICAL" prefHeight="333.0" prefWidth="3.0"/>
+        <TextField fx:id="createWaiterName" layoutX="13.0" layoutY="87.0" prefHeight="26.0" prefWidth="279.0"/>
+        <TextField fx:id="createWaiterHours" layoutX="13.0" layoutY="265.0" prefHeight="26.0" prefWidth="279.0"/>
+        <Label layoutX="265.0" layoutY="18.0" prefHeight="34.0" prefWidth="30.0" text="94" textFill="#868686">
+            <font>
+                <Font name="Futura Medium" size="23.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="logo" fitHeight="34.0" fitWidth="42.0" layoutX="223.0" layoutY="18.0">
+            <image>
+                <Image url="@../../../../../../../Downloads/Cafe94/Cafe94/src/main/resources/application/test/logo.png"/>
+            </image>
+            <effect>
+                <ColorAdjust contrast="-1.0"/>
+            </effect>
+        </ImageView>
+        <TextField fx:id="createWaiterId" layoutX="13.0" layoutY="204.0" prefHeight="26.0" prefWidth="279.0"/>
+        <Label layoutX="12.0" layoutY="240.0" prefHeight="17.0" prefWidth="90.0" text="Hours to work:"/>
+        <TextField fx:id="createWaiterLastname" layoutX="13.0" layoutY="151.0" prefHeight="26.0" prefWidth="279.0"/>
+        <Label layoutX="15.0" layoutY="291.0" prefHeight="17.0" prefWidth="107.0" text="Hours to worked:"/>
+        <TextField fx:id="createWaiterHoursWorked" layoutX="14.0" layoutY="315.0" prefHeight="26.0" prefWidth="279.0"/>
+        <Button layoutX="117.0" layoutY="349.0" mnemonicParsing="false" onAction="#editWaiterMethod" prefHeight="34.0"
+                prefWidth="72.0" text="Edit">
+            <font>
+                <Font name="Times New Roman Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Button layoutX="220.0" layoutY="349.0" mnemonicParsing="false" onAction="#createWaiterMethod" prefHeight="34.0"
+                prefWidth="72.0" text="Create">
+            <font>
+                <Font name="Times New Roman Italic" size="17.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

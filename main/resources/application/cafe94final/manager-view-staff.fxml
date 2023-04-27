@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.cafe94final.ManagerViewStaffController">
+    <children>
+        <Button fx:id="managerGoHome1" layoutX="439.0" layoutY="543.0" mnemonicParsing="false"
+                onAction="#switchToManagerHome" prefHeight="50.0" prefWidth="154.0" text="Go home">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Button>
+        <Label layoutX="915.0" layoutY="-5.0" prefHeight="71.0" prefWidth="84.0" text="94" textFill="#dddddd">
+            <font>
+                <Font name="Futura Medium" size="61.0"/>
+            </font>
+        </Label>
+        <Label layoutX="37.0" layoutY="13.0" prefHeight="31.0" prefWidth="242.0" text="Staff details:">
+            <font>
+                <Font name="Times New Roman Italic" size="40.0"/>
+            </font>
+        </Label>
+        <Label layoutX="19.0" layoutY="220.0" prefHeight="31.0" prefWidth="242.0" text="Waiters:">
+            <font>
+                <Font name="Times New Roman Italic" size="32.0"/>
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="63.0" prefHeight="31.0" prefWidth="242.0" text="Chefs:">
+            <font>
+                <Font name="Times New Roman Italic" size="32.0"/>
+            </font>
+        </Label>
+        <Label layoutX="18.0" layoutY="391.0" prefHeight="31.0" prefWidth="242.0" text="Drivers:">
+            <font>
+                <Font name="Times New Roman Italic" size="32.0"/>
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="110.0" text="Name:"/>
+        <Label layoutX="33.0" layoutY="165.0" text="Staff ID:"/>
+        <Label layoutX="363.0" layoutY="424.0" text="Hours remaining:"/>
+        <Label layoutX="334.0" layoutY="319.0" text="Hours worked:"/>
+        <Label layoutX="36.0" layoutY="266.0" text="Name:"/>
+        <Label layoutX="35.0" layoutY="323.0" text="Staff ID:"/>
+        <Label layoutX="332.0" layoutY="261.0" text="Hours remaining:"/>
+        <Label layoutX="341.0" layoutY="164.0" text="Hours worked:"/>
+        <Label layoutX="42.0" layoutY="430.0" text="Name:"/>
+        <Label layoutX="41.0" layoutY="477.0" text="Staff ID:"/>
+        <Label layoutX="341.0" layoutY="106.0" text="Hours remaining:"/>
+        <Label layoutX="363.0" layoutY="468.0" text="Hours worked:"/>
+        <Label fx:id="managerWaiterName" layoutX="35.0" layoutY="286.0" prefHeight="17.0" prefWidth="315.0"/>
+        <Label fx:id="driverRemaining" layoutX="365.0" layoutY="442.0" prefHeight="17.0" prefWidth="80.0"/>
+        <Label fx:id="managerDriverID" layoutX="41.0" layoutY="498.0" prefHeight="17.0" prefWidth="319.0"/>
+        <Label fx:id="driverWorked" layoutX="363.0" layoutY="491.0" prefHeight="17.0" prefWidth="92.0"/>
+        <Label fx:id="managerDriverName" layoutX="42.0" layoutY="449.0" prefHeight="17.0" prefWidth="324.0"/>
+        <Label fx:id="chefRemaining" layoutX="343.0" layoutY="131.0" prefHeight="17.0" prefWidth="75.0"/>
+        <Label fx:id="managerChefID" layoutX="34.0" layoutY="185.0" prefHeight="17.0" prefWidth="310.0"/>
+        <Label fx:id="chefWorked" layoutX="341.0" layoutY="185.0" prefHeight="17.0" prefWidth="88.0"/>
+        <Label fx:id="managerChefName" layoutX="31.0" layoutY="132.0" prefHeight="17.0" prefWidth="324.0"/>
+        <Label fx:id="waiterRemaining" layoutX="333.0" layoutY="283.0" prefHeight="17.0" prefWidth="75.0"/>
+        <Label fx:id="waiterWorked" layoutX="334.0" layoutY="340.0" prefHeight="17.0" prefWidth="86.0"/>
+        <Label fx:id="managerWaiterID" layoutX="35.0" layoutY="346.0" prefHeight="17.0" prefWidth="321.0"/>
+        <Label layoutX="446.0" layoutY="492.0" prefHeight="17.0" prefWidth="80.0" text="hrs"/>
+        <Label layoutX="419.0" layoutY="185.0" prefHeight="17.0" prefWidth="80.0" text="hrs"/>
+        <Label layoutX="418.0" layoutY="131.0" prefHeight="17.0" prefWidth="80.0" text="hrs"/>
+        <Label layoutX="420.0" layoutY="339.0" prefHeight="17.0" prefWidth="80.0" text="hrs"/>
+        <Label layoutX="418.0" layoutY="282.0" prefHeight="17.0" prefWidth="80.0" text="hrs"/>
+        <Label layoutX="443.0" layoutY="442.0" prefHeight="17.0" prefWidth="80.0" text="hrs"/>
+        <Separator layoutX="5.0" layoutY="63.0" prefHeight="2.0" prefWidth="345.0"/>
+        <Separator layoutX="11.0" layoutY="216.0" prefHeight="4.0" prefWidth="686.0"/>
+        <Separator layoutX="8.0" layoutY="390.0" prefHeight="4.0" prefWidth="691.0"/>
+        <Button fx:id="goToEditWaiter" layoutX="560.0" layoutY="268.0" mnemonicParsing="false"
+                onAction="#switchToEditWaiter" text="Edit waiters details"/>
+        <Button fx:id="goToEditChef" layoutX="563.0" layoutY="114.0" mnemonicParsing="false"
+                onAction="#switchToEditChef" text="Edit chefs details"/>
+        <Button fx:id="gotToEditDriver" layoutX="566.0" layoutY="431.0" mnemonicParsing="false"
+                onAction="#switchToEditDriver" text="Edit drivers details"/>
+        <Button fx:id="removeDriver" layoutX="575.0" layoutY="474.0" mnemonicParsing="false" text="Remove driver"/>
+        <Button fx:id="removeChef" layoutX="572.0" layoutY="156.0" mnemonicParsing="false" text="Remove chef"/>
+        <Button fx:id="removeWaiter" layoutX="569.0" layoutY="314.0" mnemonicParsing="false" text="Remove waiter"/>
+    </children>
+</AnchorPane>
